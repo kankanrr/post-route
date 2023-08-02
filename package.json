@@ -1,0 +1,32 @@
+{
+  "name": "project-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server --ignore client",
+    "dev": "concurrently \"cd server && npm run start\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "http-proxy-middleware": "^2.0.6",
+    "query-string": "^8.1.0",
+    "request": "^2.88.2"
+  },
+  "dependencies": {
+    "apollo-server-express": "^3.12.0",
+    "axios": "^1.4.0",
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.3.1",
+    "buffer": "^6.0.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "react-bootstrap": "^2.8.0",
+    "spotify-web-api-node": "^5.0.2"
+  }
+}
